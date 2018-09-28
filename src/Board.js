@@ -93,6 +93,8 @@
       return false;
     },
 
+    //O(n) linear because you check each spot of the row
+
     // test if any rows on this board contain conflicts
     hasAnyRowConflicts: function() {
       var result;
@@ -104,6 +106,8 @@
       }
       return false;
     },
+
+    //O(n) check each spot on board once
 
 
 
@@ -128,6 +132,8 @@
       return false;
     },
 
+    //O(n) makes column array and checks each spot once
+
     // test if any columns on this board contain conflicts
     hasAnyColConflicts: function() {
       var result;
@@ -139,7 +145,8 @@
       }
       return false;
     },
-
+    
+    //O(n) check each column spot once
 
 
     // Major Diagonals - go from top-left to bottom-right
@@ -168,6 +175,8 @@
       return false;
     },
 
+    //O(n) making diagonal array and checking each spot once
+
     // test if any major diagonals on this board contain conflicts
     hasAnyMajorDiagonalConflicts: function() {
       var result;
@@ -180,6 +189,7 @@
       return false;
     },
 
+    //O(n) makes more diagonal arrays and checks them, still linear
 
 
     // Minor Diagonals - go from top-right to bottom-left
@@ -208,6 +218,8 @@
       return false;
     },
 
+    //O(n) same as other diagonals
+
     // test if any minor diagonals on this board contain conflicts
     hasAnyMinorDiagonalConflicts: function() {
       var result;
@@ -219,6 +231,8 @@
       }
       return false;
     }
+
+    //O(n) same as other diagonals
 
     /*--------------------  End of Helper Functions  ---------------------*/
 
