@@ -48,7 +48,7 @@ window.countNRooksSolutions = function(n) {
       }
       board.togglePiece(row, i);
 
-      if(board.hasAnyRooksConflicts()) {
+      if(board.hasColConflictAt(i)) {
       board.togglePiece(row, i);
       } else {
       col = i;
